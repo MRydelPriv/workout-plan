@@ -9,7 +9,7 @@ import TrainingDisplay from './components/TrainingDisplay';
 const App = () => {
   const clockRef = useRef();
   const [trainings, setTrainigs] = useState([]);
-  const [historyToDisplay, setHistoryToDisplay] = useState([]);
+  const [historyToDisplay, setHistoryToDisplay] = useState(null);
   const [counter, setCounter] = useState();
   const [timer, toggleTimer] = useState(false);
   const [currentTraining, setCurrentTraining] = useState(0);
